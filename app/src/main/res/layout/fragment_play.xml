@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.other.ttms.views.CoverFlowViewPager
+        android:id="@+id/cover"
+        android:background="#c7e9e9e9"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+
+    <com.example.other.ttms.views.UpView
+        android:layout_width="match_parent"
+        android:background="#c7e9e9e9"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/play_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="西小河的夏天"
+
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/other_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="主演：啪啪啪啪啪啪"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#848484"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="今天6月12日"
+                android:textColor="@color/title"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="明天6月13日"
+                android:gravity="center"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/show_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

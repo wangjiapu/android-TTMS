@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.other.ttms.views.fullScreen
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:focusable="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingTop="120dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="215dp"
+            android:text="TTMS"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="电话"
+            android:textColorHint="#e062c5f2"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#e0ffffff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="验证码"
+                android:textColorHint="#e062c5f2"
+                android:textColor="#ffffff"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:background="@null" />
+            <TextView
+                android:id="@+id/ver_code"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="获取验证码"
+                android:background="#85bebdbd"
+                android:textColor="#494848"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#e0ffffff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="登录"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/loginbg"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/forgetpwd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="忘记密码？"
+                android:textColor="#e062c5f2"/>
+            <TextView
+                android:id="@+id/registered"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="新用户注册"
+                android:gravity="right"
+                android:textColor="#e062c5f2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:text="OnePiece团队制作"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>
